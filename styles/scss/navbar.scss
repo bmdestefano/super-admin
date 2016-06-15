@@ -1,0 +1,121 @@
+.header{
+	@include container;
+	@include span(12);
+	background: $light-grey;
+}
+/*.tab-wrapper{
+	margin-top: 0.625em;
+	margin-bottom: 0;
+	padding: 0 2em;
+	position: relative;   
+	min-height: 12.500em;
+	clear: both;
+	.tab{
+		display: inline-block;
+		margin-right: .5em;
+		.tab-hidden-input {
+			display: none;
+		}
+		.tab-label {
+			color: #555;
+			font-weight: 300;
+			padding: .75em .75em 0;	
+			background: #eee;
+			padding: 0.625em;
+			&:hover{
+				@include box-shadow(inset 1px 1px 2px rgba(153, 153, 153, .75));
+				@include border-radius(.75em .75em 0 0);
+				cursor: pointer;
+			}
+		}
+		.tab-content {
+			position: absolute;
+			top: 1.750em;
+			left: 0;
+			background: $dark-grey;
+			right: 0;
+			bottom: 0;
+			padding: 1em;
+		}
+		.tab-hidden-input:checked ~ .tab-label {
+			color: $brand-color;
+			background: $dark-grey;
+			@include box-shadow(inset 1px 1px 2px rgba(153, 153, 153, .75));
+			@include border-radius(.75em .75em 0 0);
+			z-index: 2;
+		}
+		.tab-hidden-input:checked ~ .tab-label ~ .tab-content {
+			z-index: 1;
+		}
+	}
+} */
+
+
+.tabs {
+    margin-top: 0.625em;
+	margin-bottom: 0;
+	padding: 0 2em;
+	position: relative;   
+	clear: both;
+    &:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+.tab-hidden-input {
+    display:none;
+}
+.tab-label {
+    color: #555;
+	font-weight: 300;
+	padding: .75em .75em 0;	
+	background: #eee;
+	padding: 0.625em;
+	display: inline-block;
+	&:not(:checked) ~ .tab-label{
+		&:hover{
+			@include box-shadow(inset 1px 1px 2px rgba(153, 153, 153, .75));
+			@include border-radius(.75em .75em 0 0);
+			cursor: pointer;
+		}
+	}	
+}
+.tab-content {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+.tab-content * {
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+	0% {
+		transform: scale(0.9);
+		opacity: 0;
+	}
+	50% {
+		transform: scale(1.01);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.tabs [id^="tab"]:checked + .tab-label {
+    color: $brand-color;
+	background: #FFF;
+	@include border-radius(.75em .75em 0 0);
+	z-index: 2;
+}
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3 {
+    display: block;
+}

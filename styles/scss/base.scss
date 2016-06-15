@@ -1,0 +1,22 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+body{
+	font-family: $primary-font;
+	margin: 0;
+}
+.container{
+	@include container;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+textarea{
+	resize: none;
+}

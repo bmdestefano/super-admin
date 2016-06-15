@@ -1,0 +1,35 @@
+.settings-container{
+	@include container;
+	@include span(12);
+	background: #FFF;
+	padding: 1em;
+}
+.settings-container-left{
+	@include container;
+	@include span(6 first);
+}
+.settings-container-right{
+	@include container;
+	@include span(6 last);
+}
+.individual-setting-wrapper{
+	@include container;
+	@include span(12);
+	position: relative;
+	margin-bottom: .75em;
+	&.no-margin-bottom{
+		margin-bottom: 0;
+	}
+}
+.setting-name{
+	@include container;
+	@include span(6 first);
+}
+.setting-input-group{
+	@include container;
+	@include span(6 last);
+}
+.toggle-wrapper--general{
+	@include container;
+	@include span(6 last);
+}
