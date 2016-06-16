@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70px" height="63px" viewBox="0 0 70 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M41.9470174,20 L61.9986837,20 C66.4176887,20 70,23.573805 70,27.9997687 L70,55.0002313 C70,59.4183816 66.420342,63 62.0042148,63 L7.99578523,63 C3.57983498,63 0,59.426195 0,55.0002313 L0,27.9997687 L0,27.9997687 C0,23.5816184 3.58389884,20 8.00684572,20 L28.072369,20" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="70" height="43" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <path d="M35,16.5 L35,44.5" id="Line" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square"></path>
+            <use id="Rectangle-1" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="10" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <polygon id="Triangle-3" fill="#FFFFFF" points="35 0 45 14 25 14"></polygon>
+        </g>
+    </g>
+</svg>

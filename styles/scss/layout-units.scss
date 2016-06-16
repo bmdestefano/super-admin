@@ -6,11 +6,38 @@
 }
 .settings-container-left{
 	@include container;
-	@include span(6 first);
+	@media all and (min-width: 900px){
+		@include span(6 first);
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
+	}
 }
 .settings-container-right{
 	@include container;
-	@include span(6 last);
+	@media all and (min-width: 900px){
+		@include span(6 last);
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
+	}
+}
+.settings-container-middle{
+	@include container;
+	@include span(isolate 6 of 12 at 4);
+	.setting-name,
+	.setting-input-group{
+		@include container;
+		@include span(12);
+	}
+}
+.category-dump{
+	@include container;
+	@include span(12);
+	li{
+		@include container;
+		@include span(isolate 6 of 12 at 4);
+	}
 }
 .individual-setting-wrapper{
 	@include container;
@@ -29,7 +56,31 @@
 	@include container;
 	@include span(6 last);
 }
+.add-user-role{
+	.setting-name{
+		@include container;
+		@include span(3 first);
+	}
+	.setting-input-group{
+		@include container;
+		@include span(9 last);
+	}
+}
 .toggle-wrapper--general{
 	@include container;
 	@include span(6 last);
+}
+.top-images{
+	@include container;
+	@include span(12);
+	.image-wrapper{
+		&:first-of-type{
+			@include container;
+			@include span(3 first);
+		}
+		&:last-of-type{
+			@include container;
+			@include span(9 last);
+		}
+	}
 }
