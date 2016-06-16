@@ -34,24 +34,6 @@
 		background-color: $light-grey;
 		border-left: 1px solid $dark-grey;
 		position: relative;
-		&:hover{
-			.help-wrapper{
-				display: block;
-			}
-		}
-		.help-wrapper{
-			display: none;
-			position: absolute;
-			top: 1.875em;
-			background: black;
-			padding: 1em;
-			@include border-radius(10px);
-			right: 0;
-			z-index: 2;
-			img{
-				max-width: 18.750em;
-			}
-		}
 	}	
 }
 .toggle-wrapper,

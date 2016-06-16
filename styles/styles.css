@@ -382,21 +382,6 @@ textarea {
     background-color: #EEEEEE;
     border-left: 1px solid #CCCCCC;
     position: relative; }
-    .setting-input-group .input-group-addon:hover .help-wrapper {
-      display: block; }
-    .setting-input-group .input-group-addon .help-wrapper {
-      display: none;
-      position: absolute;
-      top: 1.875em;
-      background: black;
-      padding: 1em;
-      border-radius: 10px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      right: 0;
-      z-index: 2; }
-      .setting-input-group .input-group-addon .help-wrapper img {
-        max-width: 18.750em; }
 
 .toggle-wrapper:before, .toggle-wrapper:after,
 .toggle:before,
