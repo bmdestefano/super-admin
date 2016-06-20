@@ -113,7 +113,8 @@ textarea {
 #tab2:checked ~ #tab-content2,
 #tab3:checked ~ #tab-content3,
 #tab4:checked ~ #tab-content4,
-#tab5:checked ~ #tab-content5 {
+#tab5:checked ~ #tab-content5,
+#tab6:checked ~ #tab-content6 {
   display: block; }
 
 .header-text {
@@ -144,6 +145,40 @@ textarea {
     content: " ";
     display: block;
     clear: both; }
+
+.cards-container {
+  padding: 0 2em 2em; }
+  .cards-container .card-row {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .cards-container .card-row:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .cards-container .card-row .card {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; }
+      .cards-container .card-row .card:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .cards-container .card-row .card:first-child {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%; }
+      .cards-container .card-row .card:last-child {
+        width: 32.20339%;
+        float: right;
+        margin-right: 0; }
 
 .settings-container-left {
   max-width: 75em;
@@ -228,10 +263,10 @@ textarea {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto;
-    width: 49.15254%;
+    width: 100%;
     float: left;
-    margin-left: 25.42373%;
-    margin-right: -100%; }
+    margin-left: 0;
+    margin-right: 0; }
     .category-dump li:after {
       content: " ";
       display: block;
@@ -325,28 +360,145 @@ textarea {
     content: " ";
     display: block;
     clear: both; }
-  .top-images .image-wrapper:first-of-type {
+  .top-images .image-wrapper {
     max-width: 75em;
     margin-left: auto;
-    margin-right: auto;
-    width: 23.72881%;
-    float: left;
-    margin-right: 1.69492%; }
-    .top-images .image-wrapper:first-of-type:after {
+    margin-right: auto; }
+    .top-images .image-wrapper:after {
       content: " ";
       display: block;
       clear: both; }
-  .top-images .image-wrapper:last-of-type {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 74.57627%;
-    float: right;
-    margin-right: 0; }
-    .top-images .image-wrapper:last-of-type:after {
-      content: " ";
-      display: block;
-      clear: both; }
+    @media all and (min-width: 900px) {
+      .top-images .image-wrapper {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; } }
+    @media all and (max-width: 899px) {
+      .top-images .image-wrapper {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
+    .top-images .image-wrapper:first-of-type {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto; }
+      .top-images .image-wrapper:first-of-type:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      @media all and (min-width: 900px) {
+        .top-images .image-wrapper:first-of-type {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%; } }
+      @media all and (max-width: 899px) {
+        .top-images .image-wrapper:first-of-type {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; } }
+    .top-images .image-wrapper:last-of-type {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto; }
+      .top-images .image-wrapper:last-of-type:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      @media all and (min-width: 900px) {
+        .top-images .image-wrapper:last-of-type {
+          width: 49.15254%;
+          float: right;
+          margin-right: 0; } }
+      @media all and (max-width: 899px) {
+        .top-images .image-wrapper:last-of-type {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; } }
+
+.image-wrapper--first {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .image-wrapper--first:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media all and (min-width: 900px) {
+    .image-wrapper--first {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media all and (max-width: 899px) {
+    .image-wrapper--first {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.image-wrapper--last {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .image-wrapper--last:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media all and (min-width: 900px) {
+    .image-wrapper--last {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media all and (max-width: 899px) {
+    .image-wrapper--last {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.stat-wrapper--left {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .stat-wrapper--left:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media all and (min-width: 900px) {
+    .stat-wrapper--left {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%;
+      padding-left: 1em; } }
+  @media all and (max-width: 899px) {
+    .stat-wrapper--left {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.stat-wrapper--right {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .stat-wrapper--right:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media all and (min-width: 900px) {
+    .stat-wrapper--right {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0;
+      padding-right: 1em; } }
+  @media all and (max-width: 899px) {
+    .stat-wrapper--right {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .setting-input-group {
   position: relative;
@@ -550,31 +702,68 @@ textarea {
     font-size: 1.375em;
     color: #858585; }
 
-.settings-container-middle .setting-input-group {
+.category-dump li {
+  border: 1px solid #00A9E0;
+  padding: 1em;
+  color: #555;
+  font-weight: 500;
+  float: initial;
   margin-top: 1em; }
-
-.category-dump {
-  margin-top: 6em; }
-  .category-dump li {
-    border: 1px solid #00A9E0;
-    padding: 1em;
-    color: #555;
-    font-weight: 500;
-    float: initial;
-    margin-top: 1em; }
-    .category-dump li:first-of-type {
-      margin-top: 0; }
-    .category-dump li img {
-      width: 1.250em;
-      margin-right: 0.625em; }
+  .category-dump li:first-of-type {
+    margin-top: 0; }
+  .category-dump li img {
+    width: 1.250em;
+    margin-right: 0.625em; }
 
 .user-role-table {
   border-collapse: collapse; }
+  @media all and (max-width: 899px) {
+    .user-role-table {
+      display: block; }
+      .user-role-table thead, .user-role-table tbody, .user-role-table th, .user-role-table td, .user-role-table tr {
+        display: block; }
+      .user-role-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+      .user-role-table tbody tr:nth-of-type(odd) {
+        background: #EEE; }
+      .user-role-table td {
+        border: 0 !important;
+        position: relative;
+        padding-left: 50%; }
+        .user-role-table td img {
+          display: none; }
+      .user-role-table td:before {
+        position: absolute;
+        top: 20px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap; }
+      .user-role-table td:nth-of-type(1):before {
+        content: "Role"; }
+      .user-role-table td:nth-of-type(2):before {
+        content: "Create Company"; }
+      .user-role-table td:nth-of-type(3):before {
+        content: "Create Group"; }
+      .user-role-table td:nth-of-type(4):before {
+        content: "Create Event"; }
+      .user-role-table td:nth-of-type(5):before {
+        content: "Create Facility"; }
+      .user-role-table td:nth-of-type(6):before {
+        content: "Create Job"; } }
   .user-role-table th {
     color: #555;
     font-weight: 500; }
   .user-role-table .setting-text {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    .user-role-table .setting-text img {
+      position: absolute;
+      width: 1.25em;
+      right: 0;
+      top: -1.25em; }
   .user-role-table td {
     padding-bottom: 1em;
     padding-top: 1em;
@@ -617,9 +806,81 @@ textarea {
   outline: none; }
 
 .add-user-role {
-  margin-bottom: 2em; }
+  margin-top: 2em; }
   .add-user-role .setting-text {
     color: #00A9E0;
     font-weight: 500; }
+
+.card-row {
+  margin-bottom: 1em; }
+  .card-row.first {
+    margin-top: 6em; }
+
+.card {
+  position: relative;
+  min-height: 6em;
+  padding-bottom: 1em;
+  color: #555;
+  background: #EEE;
+  -webkit-box-shadow: 1px 1px 8px #555;
+  -moz-box-shadow: 1px 1px 8px #555;
+  box-shadow: 1px 1px 8px #555;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+  .card .logo-wrapper {
+    position: absolute;
+    top: 3em;
+    width: 33%;
+    left: 50%;
+    margin-left: -16.67%;
+    background: #FFF;
+    -webkit-box-shadow: 1px 1px 8px #555;
+    -moz-box-shadow: 1px 1px 8px #555;
+    box-shadow: 1px 1px 8px #555;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .card .school-name {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 3.5em;
+    font-weight: 300;
+    margin-bottom: 0; }
+  .card .stat-header {
+    font-size: 1.15em;
+    margin: 1em;
+    font-weight: 300;
+    text-align: center; }
+  .card .stat {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: .5em;
+    word-break: break-all; }
+    .card .stat span {
+      color: #00A9E0;
+      font-weight: 500;
+      font-size: .9em; }
+
+.banner-wrapper {
+  position: relative; }
+  .banner-wrapper .banner {
+    height: 6em; }
+  .banner-wrapper .banner,
+  .banner-wrapper .overlay {
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: .5; }
 
 /*# sourceMappingURL=styles.css.map */

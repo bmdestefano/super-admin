@@ -4,6 +4,23 @@
 	background: #FFF;
 	padding: 1em;
 }
+.cards-container{
+	padding: 0 2em 2em;
+	.card-row{
+		@include container;
+		@include span(12);
+		.card{
+			@include container;
+			@include span(4);
+			&:first-child{
+				@include span(4 first);
+			}
+			&:last-child{
+				@include span(4 last);
+			}
+		}
+	}
+}
 .settings-container-left{
 	@include container;
 	@media all and (min-width: 900px){
@@ -36,7 +53,7 @@
 	@include span(12);
 	li{
 		@include container;
-		@include span(isolate 6 of 12 at 4);
+		@include span(12);
 	}
 }
 .individual-setting-wrapper{
@@ -74,13 +91,68 @@
 	@include container;
 	@include span(12);
 	.image-wrapper{
+		@include container;
+		@media all and (min-width: 900px){
+			@include span(3);
+		}
+		@media all and (max-width: 899px){
+			@include span(12);
+		}
 		&:first-of-type{
 			@include container;
-			@include span(3 first);
+			@media all and (min-width: 900px){
+				@include span(3 first);
+			}
+			@media all and (max-width: 899px){
+				@include span(12);
+			}
 		}
 		&:last-of-type{
 			@include container;
-			@include span(9 last);
+			@media all and (min-width: 900px){
+				@include span(6 last);
+			}
+			@media all and (max-width: 899px){
+				@include span(12);
+			}
 		}
+	}
+}
+.image-wrapper--first{
+	@include container;
+	@media all and (min-width: 900px){
+		@include span(6 first);
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
+	}
+}
+.image-wrapper--last{
+	@include container;
+	@media all and (min-width: 900px){
+		@include span(6 last);
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
+	}
+}
+.stat-wrapper--left{
+	@include container;
+	@media all and (min-width: 900px){
+		@include span(6 first);
+		padding-left: 1em;
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
+	}
+}
+.stat-wrapper--right{
+	@include container;
+	@media all and (min-width: 900px){
+		@include span(6 last);
+		padding-right: 1em;
+	}
+	@media all and (max-width: 899px){
+		@include span(12);
 	}
 }
