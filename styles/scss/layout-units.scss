@@ -11,13 +11,19 @@
 		@include span(12);
 		.card{
 			@include container;
-			@include span(4);
-			&:first-child{
-				@include span(4 first);
+			@media all and (min-width: 900px){
+				@include span(4);
+				&:first-child{
+					@include span(4 first);
+				}
+				&:last-child{
+					@include span(4 last);
+				}
 			}
-			&:last-child{
-				@include span(4 last);
+			@media all and (max-width: 899px){
+				@include span(12);
 			}
+			
 		}
 	}
 }

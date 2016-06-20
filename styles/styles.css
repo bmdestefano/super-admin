@@ -163,22 +163,30 @@ textarea {
     .cards-container .card-row .card {
       max-width: 75em;
       margin-left: auto;
-      margin-right: auto;
-      width: 32.20339%;
-      float: left;
-      margin-right: 1.69492%; }
+      margin-right: auto; }
       .cards-container .card-row .card:after {
         content: " ";
         display: block;
         clear: both; }
-      .cards-container .card-row .card:first-child {
-        width: 32.20339%;
-        float: left;
-        margin-right: 1.69492%; }
-      .cards-container .card-row .card:last-child {
-        width: 32.20339%;
-        float: right;
-        margin-right: 0; }
+      @media all and (min-width: 900px) {
+        .cards-container .card-row .card {
+          width: 32.20339%;
+          float: left;
+          margin-right: 1.69492%; }
+          .cards-container .card-row .card:first-child {
+            width: 32.20339%;
+            float: left;
+            margin-right: 1.69492%; }
+          .cards-container .card-row .card:last-child {
+            width: 32.20339%;
+            float: right;
+            margin-right: 0; } }
+      @media all and (max-width: 899px) {
+        .cards-container .card-row .card {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; } }
 
 .settings-container-left {
   max-width: 75em;
